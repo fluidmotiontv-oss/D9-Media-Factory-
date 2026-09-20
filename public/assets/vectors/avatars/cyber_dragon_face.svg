@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <!-- Cyan Neon Glow Filter -->
+    <filter id="cyber-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Super Glow for Core Breath & Eyes -->
+    <filter id="electric-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur1" />
+      <feGaussianBlur stdDeviation="14" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Circuit Shimmer Gradients -->
+    <linearGradient id="cyber-cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="cyber-plate-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="cyber-gold-circuit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <radialGradient id="cyber-ambient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Quantum Aura -->
+  <circle cx="150" cy="150" r="140" fill="url(#cyber-ambient)" />
+
+  <!-- Binary Ring & Diagnostic Grid -->
+  <circle cx="150" cy="150" r="135" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.4" />
+  <circle cx="150" cy="150" r="120" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2 12" opacity="0.6" />
+
+  <!-- Outer Cyber Dragon Crest & Horns -->
+  <!-- Left Main Horn -->
+  <path d="M 120,70 Q 70,25 35,45 Q 65,80 105,100 Z" fill="url(#cyber-plate-grad)" stroke="#00f0ff" stroke-width="2" filter="url(#cyber-glow)" />
+  <path d="M 60,45 L 85,75 M 45,55 L 70,80" stroke="#00f0ff" stroke-width="1.5" opacity="0.8" />
+  
+  <!-- Right Main Horn -->
+  <path d="M 180,70 Q 230,25 265,45 Q 235,80 195,100 Z" fill="url(#cyber-plate-grad)" stroke="#00f0ff" stroke-width="2" filter="url(#cyber-glow)" />
+  <path d="M 240,45 L 215,75 M 255,55 L 230,80" stroke="#00f0ff" stroke-width="1.5" opacity="0.8" />
+
+  <!-- Top Center Crown Crest -->
+  <polygon points="150,25 170,65 150,80 130,65" fill="#1e1b4b" stroke="#00f0ff" stroke-width="2" />
+  <polygon points="150,38 162,62 150,72 138,62" fill="#00f0ff" opacity="0.7" filter="url(#cyber-glow)" />
+  
+  <!-- Auxiliary Horn Plates -->
+  <path d="M 100,105 L 45,115 L 90,135 Z" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" />
+  <path d="M 200,105 L 255,115 L 210,135 Z" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" />
+
+  <!-- Main Dragon Head Armor Structure -->
+  <path d="M 100,100 L 150,65 L 200,100 L 225,160 L 195,225 L 150,265 L 105,225 L 75,160 Z" 
+        fill="url(#cyber-plate-grad)" stroke="#00f0ff" stroke-width="2.5" />
+
+  <!-- Circuit Micro-traces & Neon Etchings -->
+  <path d="M 150,65 L 150,140 M 130,90 L 110,120 M 170,90 L 190,120" stroke="#00f0ff" stroke-width="1.5" opacity="0.8" />
+  <path d="M 110,120 L 95,150 M 190,120 L 205,150" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7" />
+  <circle cx="110" cy="120" r="3" fill="#00f0ff" filter="url(#cyber-glow)" />
+  <circle cx="190" cy="120" r="3" fill="#00f0ff" filter="url(#cyber-glow)" />
+  <circle cx="150" cy="140" r="4" fill="#facc15" filter="url(#cyber-glow)" />
+
+  <!-- Cyber Brow & Temples -->
+  <polygon points="95,125 140,135 125,150 85,140" fill="#1e1b4b" stroke="#00f0ff" stroke-width="1.5" />
+  <polygon points="205,125 160,135 175,150 215,140" fill="#1e1b4b" stroke="#00f0ff" stroke-width="1.5" />
+
+  <!-- Glowing Cyan Quantum Eyes (CYBER_DRAGON_FACE.V4) -->
+  <!-- Left Eye Socket & Fiery Neon Core -->
+  <polygon points="98,138 135,144 118,154 90,148" fill="#020617" stroke="#00f0ff" stroke-width="2" />
+  <polygon points="102,141 130,145 116,151 96,147" fill="#00f0ff" filter="url(#electric-glow)" />
+  <ellipse cx="114" cy="146" rx="4" ry="2" fill="#ffffff" filter="url(#electric-glow)" />
+
+  <!-- Right Eye Socket & Fiery Neon Core -->
+  <polygon points="202,138 165,144 182,154 210,148" fill="#020617" stroke="#00f0ff" stroke-width="2" />
+  <polygon points="198,141 170,145 184,151 204,147" fill="#00f0ff" filter="url(#electric-glow)" />
+  <ellipse cx="186" cy="146" rx="4" ry="2" fill="#ffffff" filter="url(#electric-glow)" />
+
+  <!-- Bridge of Nose Armor Plates -->
+  <polygon points="140,142 160,142 165,185 150,195 135,185" fill="#090d16" stroke="#00f0ff" stroke-width="1.5" />
+  <line x1="150" y1="145" x2="150" y2="190" stroke="#facc15" stroke-width="1.5" opacity="0.9" />
+
+  <!-- Snout & Nostrils -->
+  <path d="M 132,192 Q 150,202 168,192 L 175,208 Q 150,218 125,208 Z" fill="#1e1b4b" stroke="#00f0ff" stroke-width="2" />
+  <ellipse cx="140" cy="202" rx="3" ry="4" fill="#00f0ff" opacity="0.9" />
+  <ellipse cx="160" cy="202" rx="3" ry="4" fill="#00f0ff" opacity="0.9" />
+
+  <!-- Roaring Jaw & Cyan Energy Plasma Breath / Data Stream -->
+  <path d="M 115,212 Q 150,230 185,212 L 178,245 Q 150,265 122,245 Z" fill="#020617" stroke="#00f0ff" stroke-width="2" />
+  
+  <!-- Cyber Fangs -->
+  <polygon points="128,212 134,226 138,213" fill="#ffffff" />
+  <polygon points="162,213 166,226 172,212" fill="#ffffff" />
+  <polygon points="135,244 140,232 144,245" fill="#ffffff" />
+  <polygon points="156,245 160,232 165,244" fill="#ffffff" />
+
+  <!-- Inner Cyan Plasma Maw Core -->
+  <ellipse cx="150" cy="226" rx="18" ry="10" fill="#00f0ff" filter="url(#electric-glow)" opacity="0.95" />
+  <ellipse cx="150" cy="226" rx="10" ry="5" fill="#ffffff" filter="url(#electric-glow)" />
+
+  <!-- Binary Data Breath Sparks (0101) -->
+  <text x="110" y="278" font-family="monospace" font-size="8" fill="#00f0ff" opacity="0.8">// CD_F.V4</text>
+  <text x="190" y="278" font-family="monospace" font-size="8" fill="#38bdf8" opacity="0.8">432Hz·D9</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="ln-gold-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#00e5ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ln-petal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#ln-gold-glow)" />
+  <circle cx="100" cy="100" r="82" fill="#090d16" stroke="#00e5ff" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <!-- 8 Sacred Geometry Petals -->
+  <g transform="translate(100, 100)">
+    <!-- Petal 0 -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" />
+    <!-- Petal 1 (45 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(45)" />
+    <!-- Petal 2 (90 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(90)" />
+    <!-- Petal 3 (135 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(135)" />
+    <!-- Petal 4 (180 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(180)" />
+    <!-- Petal 5 (225 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(225)" />
+    <!-- Petal 6 (270 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(270)" />
+    <!-- Petal 7 (315 deg) -->
+    <path d="M 0,-16 C -14,-35 -14,-65 0,-78 C 14,-65 14,-35 0,-16 Z" fill="#0f172a" stroke="url(#ln-petal)" stroke-width="1.5" transform="rotate(315)" />
+    
+    <!-- Central Gold Bearing Jewel -->
+    <circle cx="0" cy="0" r="18" fill="#d4af37" stroke="#ffffff" stroke-width="2" />
+    <circle cx="0" cy="0" r="10" fill="#090d16" stroke="#00e5ff" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="4" fill="#00e5ff" />
+  </g>
+  <text x="100" y="188" font-family="monospace" font-size="9" fill="#d4af37" text-anchor="middle">LOTUS NEXUS · 432Hz</text>
+</svg>
